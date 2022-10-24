@@ -4,8 +4,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.schema import Table, MetaData
 from sqlalchemy.sql.expression import select, text
 
-engine = create_engine('trino://xxx:zzz@emr-t.data.avedian.info:8889/avedian_dwh')
+engine = create_engine('trino://xxx:yyy@emr-t.data.avedian.info:8889/avedian_dwh')
 connection = engine.connect()
 
-rows = connection.execute(text("SELECT * FROM avedian_dwh.wh_olap.grd limit 10")).fetchall()
-print(rows);
+rows = connection.execute(text("SELECT * FROM avedian_dwh.wh_olap.diagnosis_view LIMIT 10")).fetchall()
+print(rows);ls
