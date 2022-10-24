@@ -8,4 +8,4 @@ engine = create_engine('trino://xxx:yyy@emr-t.data.avedian.info:8889/avedian_dwh
 connection = engine.connect()
 
 rows = connection.execute(text("SELECT * FROM avedian_dwh.wh_olap.diagnosis_view LIMIT 10")).fetchall()
-print(rows);ls
+print(rows);
