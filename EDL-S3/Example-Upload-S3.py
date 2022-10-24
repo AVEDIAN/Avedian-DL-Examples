@@ -20,4 +20,4 @@ def upload_to_aws(local_file, bucket, s3_file):
         print("Credentials not available")
         return False
 
-uploaded = upload_to_aws('/files/output.cmbd1', 'avedian-testing-files', '<entidad>/cmbd1/output.cmbd1')
+uploaded = upload_to_aws('/files/output.cmbd1', 'avedian-files-test', '<entidad>/cmbd1/output.cmbd1')
