@@ -4,6 +4,9 @@
 - Python 3
 - Avedian EDL Credentials
 - Avedian AWS Credentials
+- Bucket: avedian-files, avedian-files-test, avedian-files-dev
+- Path: bucket/<entidad>
+- Filename: cmbd_<n>_<wh|wss>_<info>.csv    
 
 ## Steps EDL-Trino
 ```
@@ -13,6 +16,7 @@ source env/bin/activate
 pip3 install -r requirements.txt
 python3 Example-DBAPI.py
 ```
+
 ## Steps EDL-S3
 ```
 cd EDL-S3
