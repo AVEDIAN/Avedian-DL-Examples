@@ -15,7 +15,7 @@ python3 Example-DBAPI.py
 ```
 ## Steps EDL-S3
 ```
-cd cd EDL-S3
+cd EDL-S3
 python3 -m venv env
 source env/bin/activate
 pip3 install -r requirements.txt
